@@ -1,0 +1,25 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /dialisis/
+RewriteRule ^/$ index.php [L]
+RewriteRule ^api/paciente/([a-zA-Z]*)$ src/controller/PacienteController.php?metodo=$1 [L]
+RewriteRule ^api/paciente/([1-9]+)$ src/controller/PacienteController.php?idPaciente=$1 [L]
+
+
+RewriteRule ^api/usuario/([a-zA-Z]*)$ src/controller/UserController.php?metodo=$1 [L]
+
+RewriteRule ^api/rol/([a-zA-Z]*)$ src/controller/RolController.php?metodo=$1 [L]
+
+RewriteRule ^api/estado/([a-zA-Z]*)$ src/controller/EstadoController.php?metodo=$1 [L]
+
+RewriteRule ^api/empleado/([a-zA-Z]*)$ src/controller/EmpleadoController.php?metodo=$1 [L]
+
+RewriteRule ^api/departamento/([a-zA-Z]*)$ src/controller/DepartamentoController.php?metodo=$1 [L]
+
+RewriteRule ^api/municipio/([a-zA-Z]*)$ src/controller/MunicipioController.php?metodo=$1 [L]
+RewriteRule ^api/municipio/getbyiddepartamento/([0-9]+)$ src/controller/MunicipioController.php?metodo=getByIdDepartamento&idDepartamento=$1 [L]
+
+RewriteRule ^api/genero/([a-zA-Z]*)$ src/controller/GeneroController.php?metodo=$1 [L]
+
+RewriteRule ^api/estadocivil/([a-zA-Z]*)$ src/controller/EstadoCivilController.php?metodo=$1 [L]
+

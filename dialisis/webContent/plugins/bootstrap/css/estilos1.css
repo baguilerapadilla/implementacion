@@ -1,0 +1,108 @@
+/*----*/
+.container-fluid{
+    background-color: blue;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: blue;
+    
+}  
+
+
+img {
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+  #img1{
+    float: right;
+    padding-bottom: 0px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-size:16px;
+}
+
+h3{
+    margin-left: 150px;
+    padding-top: 5px;
+    color: #fff;
+  }
+
+
+.form-register {
+    width: 98%;
+    max-width: 500px;
+    background: white;
+    border-radius: 8px;
+    margin-left: 2%;
+}
+
+.form-detalle {
+    width: 98%;
+    max-width: 500px;
+    margin: center;
+    background: white;
+    border-radius: 8px;
+    margin-left: 5%;
+}
+
+
+.btn-enviar{
+    background:rgb(3, 90, 119) ;
+    color: #fff;
+}
+
+.btn-can{
+    background:crimson ;
+    color: #fff;
+}
+
+.dropdown{
+    display: inline-block;
+    padding: 5px;
+  
+    
+}
+
+.form-titulo{
+    background: rgb(3, 90, 119);
+    color: fff;
+    padding: 9px;
+    text-align: left;
+    font-weight: 100;
+    font-size: 15px;
+    
+}
+
+.contenedor-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+    
+}
+
+.input-60 {
+    width: 60%;
+}
+
+
