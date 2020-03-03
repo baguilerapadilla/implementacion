@@ -11,6 +11,7 @@
 
     <title>Registro Usuario</title>
     
+    
  
 
 
@@ -127,8 +128,6 @@
             </div>
         </div>
     </div>
-
-
 
 
 
