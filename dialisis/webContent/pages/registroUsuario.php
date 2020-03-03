@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="../plugins/bootstrap2/css/bootstrap.min.css"> 
 
 
-    <title>Registro Usuario</title>
-    
-    
- 
-
 
 </head>
 
@@ -29,142 +24,64 @@
     </div>
 
 
-    <div class="row row-cols-1 row-cols-md-2">
-    <div class="col-6 mb-4">
-        <div class="card">
-      
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-
-                
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
   
+            <form class="form-register col-6" action="Registar.php" method="post">
 
-    
+                <input type="hidden" id="idUsuario" >
 
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+                <div class="form-row ">
+                <h3 class="">Agregar usuario</h3>
+                <br><br>
+                <div class="container">
 
-            <input type="hidden" id="idUsuario" >
+                <div class="col">
+                    <label for="">Nombre de Usuario</label>
+                        <input type="text" name="nombre"  id="nombre" class="form-control" placeholder="Nombre">
+                </div>
 
-            <div class="form-row ">
-            <h3 class="">Agregar usuario</h3>
-            <br><br>
-            <div class="container col-md-6">
-                    
+                <div class="col">
+                    <label for="">Apellido</label>
+                        <input type="text" name="apellido"  id="apellido" class="form-control" placeholder="apellido">
+                </div>
+
+                <div class="col">
+                    <label for="">Identidad</label>
+                        <input type="text" name="identidad"  id="identidad" class="form-control" placeholder="identidad Usuario">
+                </div>
+
                 <div class="col">
                     <label for="">Seleccione Rol</label>
                     <select class="form-control" name="selectRol" id="selectRol"></select> 
                 </div>
-                <!-- <div class="col ">
-                    <label for="">Telefono</label>
-                    <input type="text" class="form-control" placeholder="Telefono">
-                </div> -->
-            </div>
-            <!-- <div class="container col-md-6">
-                    <div class="col">
-                        <label for="">Teléfono</label>
-                        <input type="telefono" class="form-control" id="telefono" placeholder="Teléfono">
-                    </div>
-                    <div class="col ">
-                        <label for="">Telefono</label>
-                        <input type="text" class="form-control" placeholder="Telefono">
-                    </div>
+
+
+                <div class="col">
+                    <label for="">Nombre de Usuario</label>
+                        <input type="text" name="nombreUsuario"  id="nombreUsuario" class="form-control" placeholder="Nombre de Usuario">
                 </div>
-            <div> -->
-            </div>
 
+                <div class="col">
+                    <label for="">Contraseña</label>
+                        <input type="password" name="password"  id="password" class="form-control" placeholder="Contraseña">
+                </div>
 
-            <form action="Registar.php" method="post" class="form-register text-left">
-            <h1 class="form-titulo text-left">Informacion del usuario</h1>
-            <div class="Contenedor-inputs">
-                <p>Nombre usuario: &nbsp;&nbsp; 
-                <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de Usuario" class="input-60"
-                        required></p>
-                <p>Contraseña : &nbsp;&nbsp; 
-                <input type="password" name="password" id="password" placeholder="Contraseña"
-                        class="input-60"></p>
-                <p>Confirmar contraseña : &nbsp;&nbsp; 
-                <input type="password" name="passwordConfirmacion" id="passwordConfirmacion"
-                        placeholder="Confirmar contraseña" class="input-60" required></p>
-                <p>Correo : &nbsp;&nbsp; 
-                <input type="email" name="correo" id="correo" placeholder="Correo" class="input-60"
-                        required></p>
+                <div class="col">
+                    <label for="">Confirmar la Contraseña</label>
+                        <input type="password" name="passwordConfirmacion"  id="passwordConfirmacion" class="form-control" placeholder="Confirmar contraseña">
+                </div>
 
-            </div>
+                <div class="col">
+                    <label for="">Fecha de vencimiento</label>
+                        <input type="date" name="fechaVencimiento"  id="fechaVencimiento" class="form-control" >
+                </div>
 
-
-            <form action="Registrar.php" method="post" class="form-detalle text-left">
-                <h1 class="form-titulo text-left">Detalles</h1>
-                <div class="Contenedor-inputs">
-                    <p>Estado : &nbsp;&nbsp; 
-                    <select  name="selectEstado" id="selectEstado" class="input-60"
-                            required></select></p>
-                    <div class="form-group">
-                        <p>Fecha vencimiento:  
-                        <input type="date" name="fechaVencimiento" id="fechaVencimiento"></p>
-                    </div>
-
+                <input type="button" value="Registrar" id="btnRegistrar" class="btn-enviar" required>
+                <input type="button" value="Cancelar" class="btn-can" required>
+                
             </form>
+        
 
-            <input type="button" value="Registrar" id="btnRegistrar" class="btn-enviar" required>
-            <input type="button" value="Cancelar" class="btn-can" required>
-        </div>
-
-
-
-
-
-  
-    
-  
-
-
-  
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!--  -->
-
-    
-
-
-
-
-
-
-    
-
-
-     
-
-
-    
-   
-
-
-
+        
 
 <!--===============================================================================================-->
     <script src="../plugins/jquery/jquery.js"></script>
