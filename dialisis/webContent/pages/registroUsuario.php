@@ -83,22 +83,22 @@
 
         
 
-<!--===============================================================================================-->
-    <script src="../plugins/jquery/jquery.js"></script>
-<!--===============================================================================================-->
-    <script src="../plugins/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-    <script src="../plugins/popper/popper.js"></script>
-    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-    <script src="../plugins/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-    <script src="../plugins/vendor/daterangepicker/moment.min.js"></script>
-    <script src="../plugins/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-    <script src="../plugins/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-    <!-- <script src="../plugins/datatables/jquery.datatables.js"></script> -->
+    <!--===============================================================================================-->
+        <script src="../plugins/jquery/jquery.js"></script>
+    <!--===============================================================================================-->
+        <script src="../plugins/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="../plugins/popper/popper.js"></script>
+        <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="../plugins/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="../plugins/vendor/daterangepicker/moment.min.js"></script>
+        <script src="../plugins/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+        <script src="../plugins/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+        <!-- <script src="../plugins/datatables/jquery.datatables.js"></script> -->
 
      <script src="../plugins/datatables2/dataTables.js"></script>
 

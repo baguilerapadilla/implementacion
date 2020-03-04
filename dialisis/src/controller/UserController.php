@@ -88,6 +88,9 @@ class UserController {
         $userModel = new User();
         $userModel->setId($post['idUsuario']);
         $userModel->setIdRol($post['idRol']);
+        $userModel->setNombre($post['nombre']);
+        $userModel->setApellido($post['apellido']);
+        $userModel->setIdentidad($post['identida']);
         $userModel->setIdEmpleado($idEmpleado);
         $userModel->setUsuario($post['nombreUsuario']);
         $userModel->setPassword($post['password']);
