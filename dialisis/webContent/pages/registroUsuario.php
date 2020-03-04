@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="../plugins/bootstrap2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../plugins/datatables/datatable.min.css"> 
 
 
 
@@ -89,7 +90,7 @@
         <script src="../plugins/vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
         <script src="../plugins/popper/popper.js"></script>
-        <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../plugins/bootstrap2/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
         <script src="../plugins/vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
@@ -100,7 +101,7 @@
     <!--===============================================================================================-->
         <!-- <script src="../plugins/datatables/jquery.datatables.js"></script> -->
 
-     <script src="../plugins/datatables2/dataTables.js"></script>
+     <script src="../plugins/datatables2/datatable.min.js"></script>
 
 
     <script src="../plugins/sweet-alert/dist/sweetalert2.min.js"></script>
