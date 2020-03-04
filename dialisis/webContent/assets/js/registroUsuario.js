@@ -171,9 +171,11 @@ function getUsuario(){
 
         idUsuario: $("#idUsuario").val(),
         idRol: $("#selectRol").val(),
+        idRol: $("#nombre").val(),
+        idRol: $("#apellido").val(),
+        idRol: $("#telefono").val(),
         nombreUsuario: $("#nombreUsuario").val(),
         password: $("#password").val(),
-        idEmpleado : $("#idEmpleado").val(),
         passwordConfirmacion: $("#passwordConfirmacion").val(),
         correo: $("#correo").val(),
         idEstado: $("#selectEstado").val(),
@@ -186,9 +188,9 @@ function loadEvents(){
         saveUsuario('INS');
     });
 
-    $("#btnRegistrarEmpleado").on("click", function(){
+    /*$("#btnRegistrarEmpleado").on("click", function(){
         saveEmpleado('INS');
-    });
+    });*/
 
     $("#selectDepartamento").on("change", function(){
         loadSelectMunicipio($("#selectDepartamento").val());

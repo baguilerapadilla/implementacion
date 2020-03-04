@@ -26,7 +26,7 @@
 
 
   
-            <form class="form-register col-6" action="Registar.php" method="post">
+            <form class=" col-6"  method="post">
 
                 <input type="hidden" id="idUsuario" >
 

@@ -21,33 +21,6 @@ class UserService {
         
         if ($result = $mysqli->query($sql)) {
             while($res = $result->fetch_object()){
-                $empleadoModel = new EmpleadoModel();
-                $empleadoModel->setIdEmpleado($res->id_empleado);
-                $empleadoModel->setIdPaisNacimiento($res->id_pais_nacimiento);
-                $empleadoModel->setIdDepartamento($res->id_departamento);
-                $empleadoModel->setIdMunicipio($res->id_municipio);
-                $empleadoModel->setIdNacionalidad($res->id_nacionalidad);
-                $empleadoModel->setPrimerNombre($res->primer_nombre);
-                $empleadoModel->setSegundoNombre($res->segundo_nombre);
-                $empleadoModel->setPrimerApellido($res->primer_apellido);
-                $empleadoModel->setSegundoApellido($res->segundo_apellido);
-                $empleadoModel->setTipoIdentificacion($res->tipo_identificacion);
-                $empleadoModel->setIdentidad($res->identidad);
-                $empleadoModel->setFechaNacimiento($res->fecha_nacimiento);
-                $empleadoModel->setEstadoCivil($res->estado_civil);
-                $empleadoModel->setGenero($res->genero);
-                $empleadoModel->setTelefono($res->telefono);
-                $empleadoModel->setDireccion($res->direccion);
-                $empleadoModel->setCorreo($res->correo);
-                $empleadoModel->setEmpleadoEstado($res->empleado_estado);
-                $empleadoModel->setCreadoPor($res->creado_por);
-                $empleadoModel->setFechaCreacion($res->fecha_creacion);
-                $empleadoModel->setModificadoPor($res->modificado_por);
-                $empleadoModel->setFechaModificacion($res->fecha_modificacion);
-
-                $estadoModel = new EstadoModel();
-                $estadoModel->setIdEstado($res->id_estado);
-                $estadoModel->setEstado($res->estado);
 
                 $rolModel = new RolModel();
                 $rolModel->setIdRol($res->id_rol);
@@ -57,9 +30,11 @@ class UserService {
 
                 $userModel = new User();
                 $userModel->setId($res->id);
-                $userModel->setIdEmpleado($res->id_empleado);
                 $userModel->setIdRol($res->id_rol);
-                $userModel->setUsuario($res->usuario);
+                $userModel->setUsuario($res->nombre);
+                $userModel->setUsuario($res->telefono);
+                $userModel->setUsuario($res->apellido);
+                $userModel->setUsuario($res->nombreUsuario);
                 $userModel->setPassword($res->password);
                 $userModel->setToken($res->token);
                 $userModel->setTokenPassword($res->token_password);
@@ -99,8 +74,8 @@ class UserService {
         
         $mysqli = DBConnection::getDbConnection();
 
-        $sql = "INSERT INTO tbl_users (id_empleado, id_rol, usuario, password, email, id_estado, fecha_creacion, fecha_vencimiento)
-        VALUES (?, ?, ?, SHA1(?), ?, ?, NOW(), ?)";
+        $sql = "INSERT INTO tbl_users (id_empleado, id_rol, nombre, apellido, telefono, usuario, password, email, id_estado, fecha_creacion, fecha_vencimiento)
+        VALUES (?, ?, ?, ?, ?, ?, SHA1(?), ?, ?, NOW(), ?)";
         
         try {
             if ($stmt = $mysqli->prepare($sql)) {
