@@ -91,7 +91,6 @@ class UserController {
         $userModel->setNombre($post['nombre']);
         $userModel->setApellido($post['apellido']);
         $userModel->setTelefono($post['telefono']);
-        $userModel->setIdEmpleado($idEmpleado);
         $userModel->setUsuario($post['nombreUsuario']);
         $userModel->setPassword($post['password']);
         $userModel->setPasswordConfirmacion($post['passwordConfirmacion']);
