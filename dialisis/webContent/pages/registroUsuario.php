@@ -46,7 +46,7 @@
 
                 <div class="col">
                     <label for="">Identidad</label>
-                        <input type="text" name="identidad"  id="identidad" class="form-control" placeholder="identidad Usuario">
+                        <input type="text" name="telefono"  id="telefono" class="form-control" placeholder="telefono Usuario">
                 </div>
 
                 <div class="col">

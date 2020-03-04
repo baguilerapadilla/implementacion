@@ -90,7 +90,7 @@ class UserController {
         $userModel->setIdRol($post['idRol']);
         $userModel->setNombre($post['nombre']);
         $userModel->setApellido($post['apellido']);
-        $userModel->setIdentidad($post['identida']);
+        $userModel->setTelefono($post['telefono']);
         $userModel->setIdEmpleado($idEmpleado);
         $userModel->setUsuario($post['nombreUsuario']);
         $userModel->setPassword($post['password']);

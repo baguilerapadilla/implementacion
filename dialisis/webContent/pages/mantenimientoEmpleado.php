@@ -22,7 +22,7 @@
     </header>
 
     
-    <a class="btn btn-primary" href="registroEmpleado.php" role="button">Link</a>
+    <a class="btn btn-primary" href="registroUsuario.php" role="button">Registrar</a>
 
     
 
