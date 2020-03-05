@@ -2,7 +2,6 @@
 session_start();
 
 include("../service/UserService.php");
-include("../service/EmpleadoService.php");
 include("../utils/ModelResponse.php");
 include("../validator/UserValidator.php");
 
@@ -41,12 +40,6 @@ class UserController {
 
     }
 
-    function getById($idPaciente){
-        $userService = New UserService();
-
-        echo json_encode($userService->getById($idPaciente));
-
-    }
 
     // function insert($post){
     //     $modelResponse = new ModelResponse();

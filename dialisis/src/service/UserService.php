@@ -1,21 +1,19 @@
 <?php
 
 include("../model/UserModel.php");
-include("../model/EmpleadoModel.php");
 include("../model/EstadoModel.php");
 include("../model/RolModel.php");
 
 class UserService {
 
     public function getAll() {
-        include_once("../utils/DBConnection.php");
+        
         $userList = [];
 
         $userModel = null;
         $mysqli = DBConnection::getDbConnection();
 
         $sql = "SELECT * FROM tbl_users a 
-            INNER JOIN tbl_empleados b ON a.id_empleado = b.id_empleado 
             INNER JOIN tbl_estado c ON a.id_estado = c.id_estado 
             INNER JOIN tbl_roles d ON a.id_rol = d.id_rol";
         
@@ -28,12 +26,16 @@ class UserService {
                 $rolModel->setDescripcion($res->descripcion);
                 $rolModel->setFechaCreacion($res->fecha_creacion);
 
+                $rolModel = new RolEstado();
+                $rolModel->setIdEstado($res->id_rol);
+                $rolModel->setEstado($res->rol);
+
                 $userModel = new User();
                 $userModel->setId($res->id);
                 $userModel->setIdRol($res->id_rol);
-                $userModel->setUsuario($res->nombre);
-                $userModel->setUsuario($res->telefono);
-                $userModel->setUsuario($res->apellido);
+                $userModel->setNombre($res->nombre);
+                $userModel->setApellido($res->apellido);
+                $userModel->setTelefono($res->telefono);
                 $userModel->setUsuario($res->nombreUsuario);
                 $userModel->setPassword($res->password);
                 $userModel->setToken($res->token);
@@ -74,15 +76,15 @@ class UserService {
         
         $mysqli = DBConnection::getDbConnection();
 
-        $sql = "INSERT INTO tbl_users (id_empleado, id_rol, nombre, apellido, telefono, usuario, password, email, id_estado, fecha_creacion, fecha_vencimiento)
+        $sql = "INSERT INTO tbl_users (id, id_rol, nombre, apellido, telefono, usuario, password, email, id_estado, fecha_creacion, fecha_vencimiento)
         VALUES (?, ?, ?, ?, ?, ?, SHA1(?), ?, ?, NOW(), ?)";
         
         try {
             if ($stmt = $mysqli->prepare($sql)) {
 
                 /* ligar parámetros para marcadores */
-               $stmt->bind_param("iisssis", 
-                    $userModel->getIdEmpleado(),
+               $stmt->bind_param("iissssis", 
+                    $userModel->getId(),
                     $userModel->getIdRol(),
                     $userModel->getUsuario(),
                     $userModel->getPassword(),

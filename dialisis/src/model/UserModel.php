@@ -4,7 +4,6 @@ class User implements JsonSerializable {
 
     
     private $id;
-    private $idEmpleado;
     private $idRol;
     private $nombre;
     private $apellido;
@@ -24,7 +23,6 @@ class User implements JsonSerializable {
     private $fechaCreacion;
     private $fechaVencimiento;
     private $fechaToken;
-    private $empleadoModel;
     private $rolModel;
 
  
@@ -52,25 +50,7 @@ class User implements JsonSerializable {
 
     }
     /**
-     * Get the value of idEmpleado
-     */ 
-    public function getIdEmpleado()
-    {
-        return $this->idEmpleado;
-    }
-
-    /**
-     * Set the value of idEmpleado
-     *
-     * @return  self
-     */ 
-    public function setIdEmpleado($idEmpleado)
-    {
-        $this->idEmpleado = $idEmpleado;
-
-    }
-
-    /**
+    
      * Get the value of idRol
      */ 
     public function getIdRol()
@@ -338,28 +318,6 @@ class User implements JsonSerializable {
     }
     
 
-  
-
-    /**
-     * Get the value of empleadoModel
-     */ 
-    public function getEmpleadoModel()
-    {
-        return $this->empleadoModel;
-    }
-
-    /**
-     * Set the value of empleadoModel
-     *
-     * @return  self
-     */ 
-    public function setEmpleadoModel($empleadoModel)
-    {
-        $this->empleadoModel = $empleadoModel;
-
-        return $this;
-    }
-
     /**
      * Get the value of rolModel
      */ 
@@ -483,8 +441,5 @@ class User implements JsonSerializable {
     }
 }
     
-
-
-
 
 ?>

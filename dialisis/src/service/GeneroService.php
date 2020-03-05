@@ -1,11 +1,11 @@
 <?php
-
+require_once ("../utils/DBConnection.php");
 include("../model/GeneroModel.php");
 
 class GeneroService {
 
     public function getAll() {
-        include_once("../utils/DBConnection.php");
+        
         $generoList = [];
 
         $generoModel = null;
