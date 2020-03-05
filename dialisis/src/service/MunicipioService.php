@@ -5,7 +5,7 @@ include("../model/MunicipioModel.php");
 class MunicipioService {
 
     public function getAll() {
-        include_one("../utils/DBConnection.php");
+        include_once("../utils/DBConnection.php");
         $municipioList = [];
 
         $municipioModel = null;
@@ -35,7 +35,7 @@ class MunicipioService {
 
     //Retorna todos los municipios del departamento con el id del parámetro
     public function getByIdDepartamento($idDepartamento) {
-        include_one("../utils/DBConnection.php");
+        include_once("../utils/DBConnection.php");
         $municipioList = [];
 
         $municipioModel = null;

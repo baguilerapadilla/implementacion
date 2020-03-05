@@ -5,7 +5,7 @@ include("../model/EstadoCivilModel.php");
 class EstadoCivilService {
 
     public function getAll() {
-        include_one("../utils/DBConnection.php");
+        include_once("../utils/DBConnection.php");
         $estadoCivilList = [];
 
         $estadoCivilModel = null;

@@ -5,7 +5,7 @@ include("../model/RolModel.php");
 class RolService {
 
     public function getAll() {
-        include_one("../utils/DBConnection.php");
+        include_once("../utils/DBConnection.php");
         $rolList = [];
 
         $rolModel = null;
