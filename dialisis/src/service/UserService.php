@@ -1,6 +1,5 @@
 <?php
 
-include("../utils/DBConnection.php");
 include("../model/UserModel.php");
 include("../model/EmpleadoModel.php");
 include("../model/EstadoModel.php");
@@ -9,6 +8,7 @@ include("../model/RolModel.php");
 class UserService {
 
     public function getAll() {
+        include_one("../utils/DBConnection.php");
         $userList = [];
 
         $userModel = null;

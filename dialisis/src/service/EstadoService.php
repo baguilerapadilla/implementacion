@@ -1,11 +1,11 @@
 <?php
 
-include("../utils/DBConnection.php");
 include("../model/EstadoModel.php");
 
 class EstadoService {
 
     public function getAll() {
+        include_one("../utils/DBConnection.php");
         $estadoList = [];
 
         $estadoModel = null;

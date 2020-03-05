@@ -1,11 +1,11 @@
 <?php 
-include("../utils/DBConnection.php");
 include("../model/PacienteModel.php");
 include("../model/ClinicaModel.php");
 
 class PacienteService {
 
     public function getAll() {
+        include_one("../utils/DBConnection.php");
         $pacienteList = [];
 
         $pacienteModel = null;
@@ -57,7 +57,7 @@ class PacienteService {
 
 
     public function getById($idPaciente) {
-        
+        include_one("../utils/DBConnection.php");
         $pacienteModel = null;
         $mysqli = DBConnection::getDbConnection();
 

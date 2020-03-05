@@ -1,11 +1,11 @@
 <?php
 
-include("../utils/DBConnection.php");
 include("../model/RolModel.php");
 
 class RolService {
 
     public function getAll() {
+        include_one("../utils/DBConnection.php");
         $rolList = [];
 
         $rolModel = null;
