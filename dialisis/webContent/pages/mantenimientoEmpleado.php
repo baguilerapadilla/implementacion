@@ -62,14 +62,13 @@
                 <tr>
 
                 <th>Numero</th>
-                <th>Numero</th>
-                <th>Numero</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
                 <th>Usuario </th>
                 <th>Email</th>
                 <th>Estado </th>
                 <th>Fecha Registro</th>
                 <th>Acciones</th>
-                <th class="text-center"> Acciones </th> 
 
                 </tr>
                 </thead>

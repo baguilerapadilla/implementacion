@@ -16,8 +16,6 @@ var columns = [
     { data: 'nombre' },
     { data: 'apellido'},
     { data: 'usuario'},
-    { data: 'telefono'},
-    { data: 'rolModel.descripcion' },
     { data: 'email' },
     { data: 'estado' },
     { data: 'fechaCreacion' },
