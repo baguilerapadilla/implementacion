@@ -8,7 +8,7 @@ include("../validator/UserValidator.php");
 if(isset($_GET['metodo'])){
     $metodo = $_GET['metodo'];
     $userController = New UserController();
-
+   
     switch ($metodo) {
         case 'getAll':
             $userController->getAll();
@@ -35,7 +35,6 @@ class UserController {
 
     function getAll(){
         $userService = New UserService();
-
         echo json_encode($userService->getAll());
 
     }
@@ -84,7 +83,7 @@ class UserController {
         $userModel->setNombre($post['nombre']);
         $userModel->setApellido($post['apellido']);
         $userModel->setTelefono($post['telefono']);
-        $userModel->setUsuario($post['nombreUsuario']);
+        $userModel->setUsuario($post['Usuario']);
         $userModel->setPassword($post['password']);
         $userModel->setPasswordConfirmacion($post['passwordConfirmacion']);
         $userModel->setEmail($post['correo']);

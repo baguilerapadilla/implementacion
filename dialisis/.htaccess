@@ -1,6 +1,6 @@
 Options +FollowSymLinks
 RewriteEngine on
-RewriteBase /dialisis/
+RewriteBase /implementacion/dialisis/
 RewriteRule ^/$ index.php [L]
 RewriteRule ^api/paciente/([a-zA-Z]*)$ src/controller/PacienteController.php?metodo=$1 [L]
 RewriteRule ^api/paciente/([1-9]+)$ src/controller/PacienteController.php?idPaciente=$1 [L]

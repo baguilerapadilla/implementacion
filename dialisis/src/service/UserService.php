@@ -11,6 +11,7 @@ class UserService {
         $userList = [];
 
         $userModel = null;
+        include_once("../utils/DBConnection.php");
         $mysqli = DBConnection::getDbConnection();
 
         $sql = "SELECT * FROM tbl_users a 
@@ -26,9 +27,9 @@ class UserService {
                 $rolModel->setDescripcion($res->descripcion);
                 $rolModel->setFechaCreacion($res->fecha_creacion);
 
-                $rolModel = new RolEstado();
-                $rolModel->setIdEstado($res->id_rol);
-                $rolModel->setEstado($res->rol);
+                // $rolModel = new RolEstado();
+                // $rolModel->setIdEstado($res->id_rol);
+                // $rolModel->setEstado($res->rol);
 
                 $userModel = new User();
                 $userModel->setId($res->id);
@@ -36,7 +37,7 @@ class UserService {
                 $userModel->setNombre($res->nombre);
                 $userModel->setApellido($res->apellido);
                 $userModel->setTelefono($res->telefono);
-                $userModel->setUsuario($res->nombreUsuario);
+                $userModel->setUsuario($res->usuario);
                 $userModel->setPassword($res->password);
                 $userModel->setToken($res->token);
                 $userModel->setTokenPassword($res->token_password);
@@ -49,9 +50,9 @@ class UserService {
                 $userModel->setFechaCreacion($res->fecha_creacion);
                 $userModel->setFechaVencimiento($res->fecha_vencimiento);
                 $userModel->setFechaToken($res->fecha_token);
-                $userModel->setEmpleadoModel($empleadoModel);
-                $userModel->setEstadoModel($estadoModel);
-                $userModel->setRolModel($rolModel);
+                //$userModel->setEmpleadoModel($empleadoModel);
+                // $userModel->setEstadoModel($estadoModel);
+                // $userModel->setRolModel($rolModel);
                 
 
                 $userList[] = $userModel;
