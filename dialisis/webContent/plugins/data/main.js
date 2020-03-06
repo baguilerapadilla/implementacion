@@ -1,0 +1,1 @@
+$('#example').dataTable(); // para inicializar el datatabla

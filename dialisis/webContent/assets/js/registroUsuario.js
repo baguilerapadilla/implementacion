@@ -13,7 +13,10 @@ function loadContent(){
 
 var columns = [
     { data: 'id' },
-    { data: 'usuario' },
+    { data: 'nombre' },
+    { data: 'apellido'},
+    { data: 'usuario'},
+    { data: 'telefono'},
     { data: 'rolModel.descripcion' },
     { data: 'email' },
     { data: 'estado' },
@@ -188,9 +191,9 @@ function loadEvents(){
         saveUsuario('INS');
     });
 
-    /*$("#btnRegistrarEmpleado").on("click", function(){
+    $("#btnRegistrarEmpleado").on("click", function(){
         saveEmpleado('INS');
-    });*/
+    });
 
     $("#selectDepartamento").on("change", function(){
         loadSelectMunicipio($("#selectDepartamento").val());

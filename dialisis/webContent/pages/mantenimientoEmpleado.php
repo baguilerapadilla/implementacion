@@ -57,10 +57,12 @@
             </div>
             <!-- /.card-header -->
             <div class="tableUsuarios">
-            <table id="#tableUsuarios" class="table table-bordered table-striped">  
+            <table id="tableUsuarios" class="table table-bordered table-striped">  
                 <thead bgcolor="#eeeeee" align="center">
                 <tr>
 
+                <th>Numero</th>
+                <th>Numero</th>
                 <th>Numero</th>
                 <th>Usuario </th>
                 <th>Email</th>

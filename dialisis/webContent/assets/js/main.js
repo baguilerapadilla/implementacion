@@ -1,3 +1,6 @@
+$('#example').dataTable(); // para inicializar el datatabla
+
+
 
 (function ($) {
     "use strict";
