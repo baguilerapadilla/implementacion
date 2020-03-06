@@ -76,8 +76,17 @@
                         <input type="date" name="fechaVencimiento"  id="fechaVencimiento" class="form-control" >
                 </div>
 
-                <input type="button" value="Registrar" id="btnRegistrar" class="btn-enviar" required>
-                <input type="button" value="Cancelar" class="btn-can" required>
+                <div class="col pt-4">
+                    <button type="button" value="Registrar"  class="btn-enviar btn btn-primary" id="btnRegistrar">Registrar</button>
+                    <button type="button" value="Cancelar" id="btnRegistrar" class="btn-can btn btn-danger">Danger</button>
+                </div>
+
+
+                    <!-- <input type="button" value="Registrar" id="btnRegistrar" class="btn-enviar" required>
+                    <input type="button" value="Cancelar" class="btn-can" required> -->
+            
+
+                
                 
             </form>
         

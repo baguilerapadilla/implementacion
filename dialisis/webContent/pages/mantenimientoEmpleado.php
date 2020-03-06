@@ -50,11 +50,14 @@
 
     </header>
 
+    <div class="container p-4">
+    <button type="button" value="Registrar"  class="btn-enviar btn btn-primary" id="btnRegistrar">Nuevo Usuario</button>
+    </div>
+
 
     <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Uusario</h3>
-            </div>
+
+
             <!-- /.card-header -->
             <div class="tableUsuarios">
             <table id="tableUsuarios" class="table table-bordered table-striped">  
@@ -68,7 +71,7 @@
                 <th>Email</th>
                 <th>Estado </th>
                 <th>Fecha Registro</th>
-                <th>Acciones</th>
+                <th class="text-center"> Acciones </th> 
 
                 </tr>
                 </thead>

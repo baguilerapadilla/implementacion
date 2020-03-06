@@ -21,8 +21,10 @@ var columns = [
     { data: 'fechaCreacion' },
     { data: 'id', render: function(data){
         return `<td><center>
-        <a href="historial-psicologia.php?id=` + data + `"  
-        data-toggle="tooltip" title="Ir a paciente" class="btn btn-sm btn-info"> <i class="fas fa-sign-in-alt"></i> </a>
+        <a href=".php?id=` + data + `"  
+        data-toggle="tooltip" title="Actualizar" class="btn btn-sm btn-info"> <i class="far fa-edit"></i></a>
+        <a href=".php?id=` + data + `"  
+        data-toggle="tooltip" title="Eliminar" class="btn btn-sm btn-info"> <i class="fas fa-trash-alt"></i></a>
         </center></td>`;
     }}      
 
@@ -63,9 +65,7 @@ function loadTableUsuarios(){
             width: '5%'
         }
        ],
-       fnInitComplete: function(){
-        $('div.DTextraToolbar').html('<span id="btnAgregarUsuario"  type="button"	class="btn btn-success"><i class="fa fa-plus"></i>&nbsp;Agregar </span> &nbsp;');
-        }
+      
     } );
 }
 
