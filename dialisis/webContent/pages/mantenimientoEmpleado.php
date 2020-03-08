@@ -51,7 +51,7 @@
     </header>
 
     <div class="container p-4">
-    <button type="button" value="Registrar"  class="btn-enviar btn btn-primary" id="btnRegistrar">Nuevo Usuario</button>
+     <a href="registroUsuario.php" class="btn-enviar btn btn-primary" >Nuevo Usuario</a>
     </div>
 
 
