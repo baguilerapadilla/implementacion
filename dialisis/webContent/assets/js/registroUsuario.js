@@ -1,16 +1,15 @@
-
 $(document).ready(function(){
     loadContent();
 });
 
 
-
+/*funcion para cargar */
 function loadContent(){
     loadEvents();
     loadTableUsuarios();
     loadComboboxes();
 }
-
+/***************************** caragar data table  *************************************/
 var columns = [
     { data: 'id' },
     { data: 'nombre' },
@@ -39,6 +38,8 @@ function loadComboboxes(){
     loadSelectEstadoCivil();
 }
 
+
+/********************************funcion para traer usuario por ajax ******************************/
 function loadTableUsuarios(){
 
     var domContent = '<"DTextraToolbar">rftip';
@@ -129,7 +130,7 @@ function saveEmpleado(modo){
 
 
 
-function getEmpleado(){
+/*function getEmpleado(){
     return {
         primerNombre: $("#primerNombre").val(),
 
@@ -145,26 +146,10 @@ function getEmpleado(){
         correoEmpleado: $("#correoEmpleado").val(),
         direccion: $("#direccion").val(),
     }
-}
+}*/
 
 
-function getEmpleado(){
-    return {
-        primerNombre: $("#primerNombre").val(),
-
-        segundoNombre: $("#segundoNombre").val(),
-        primerApellido: $("#primerApellido").val(),
-        segundoApellido: $("#segundoApellido").val(),
-        identidad: $("#identidad").val(),
-        idGenero: $("#selectGenero").val(),
-        fechaNacimiento: $("#fechaNacimiento").val(),
-        idEstadoCivil: $("#selectEstadoCivil").val(),
-        telefono: $("#telefono").val(),
-        idMunicipio: $("#selectMunicipio").val(),
-        correoEmpleado: $("#correoEmpleado").val(),
-        direccion: $("#direccion").val(),
-    }
-}
+/*
 
 function getUsuario(){
     return {
@@ -182,7 +167,7 @@ function getUsuario(){
         idEstado: $("#selectEstado").val(),
         fechaVencimiento: $("#fechaVencimiento").val()
     }
-}
+}*/
 
 function loadEvents(){
     $("#btnRegistrar").on("click", function(){

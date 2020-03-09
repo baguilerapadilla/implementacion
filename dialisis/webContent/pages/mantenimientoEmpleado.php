@@ -51,7 +51,7 @@
     </header>
 
     <div class="container p-4">
-     <a href="registroUsuario.php" class="btn-enviar btn btn-primary" >Nuevo Usuario</a>
+     <a href="registroUsuario.php" class="btn-enviar btn btn-primary" >Unuevo Usuario</a>
     </div>
 
 
